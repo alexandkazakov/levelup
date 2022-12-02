@@ -21,7 +21,7 @@
 <body class="body">
   <header class="header">
     <video class="header__video" loop="loop" autoplay="" muted="">
-      <source src="./video/bg2.webm" type="video/webm" />
+      <source src="./video/bg.mp4" type="video/webm" />
     </video>
     <div class="container header__container flex">
       <a href="#" class="logo header__logo"><img src="./img/logo4.png" alt="Логотип LevelUp" class="logo__image"></a>
@@ -281,8 +281,8 @@
             </div>
           </div>
           <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="order__form form flex">
-            <label for="name" class="form__label" placeholder="Евпатий">Введите ваше имя</label>
-            <input type="text" name="name" class="form__input form__name">
+            <label for="name" class="form__label">Введите ваше имя</label>
+            <input type="text" name="name" class="form__input form__name" placeholder="Евпатий">
             <label for="phone" class="form__label">Введите ваш номер телефона</label>
             <input type="tel" name="phone" class="form__input form__phone" placeholder="+79998887766" pattern="[0-9]{10-11}" required>
             <input type="submit" value="Заказать" class="btn order__btn">
