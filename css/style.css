@@ -630,6 +630,8 @@ img {
   outline: none;
 }
 
+.form__input::placeholder
+
 .form__name {
   position: relative;
 }
