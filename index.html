@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="./libs/font-awesome-4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
   <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
   <script src="./libs/jquery/jquery-2.1.3.min.js"></script>
 	<script src="./libs/owl-carousel/owl.carousel.min.js"></script>
@@ -31,6 +32,11 @@
           <li class="nav__item"><a href="#order" class="nav__link">Заказать</a></li>
         </ul>
       </nav>
+      <button class="header__burger burger btn-reset">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
     </div>
     <div class="container header__content">
       <h1 class="header__title">LevelUp</h1>
@@ -279,9 +285,9 @@
           </div>
           <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="order__form form flex">
             <label for="name" class="form__label">Введите ваше имя</label>
-            <input type="text" name="name" class="form__input form__name" placeholder="Евпатий">
+            <input type="text" name="name" class="form__input form__name" placeholder="Например, Евпатий" required>
             <label for="phone" class="form__label">Введите ваш номер телефона</label>
-            <input type="tel" name="phone" class="form__input form__phone" placeholder="+79998887766" pattern="[0-9]{10-11}" required>
+            <input type="tel" name="phone" class="form__input form__phone" placeholder="Например, +79998887766" pattern="[0-9]{10-11}" required>
             <input type="submit" value="Заказать" class="btn order__btn">
           </form>
         </div>
